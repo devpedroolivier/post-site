@@ -1,5 +1,60 @@
+# Python
 __pycache__/
-.env
-*.pyc
+*.py[cod]
 *.pyo
 *.pyd
+
+# Virtual envs
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# IDEs e editores
+.vscode/
+.idea/
+.spyderproject
+.spyproject
+.ropeproject
+
+# Testes e cache
+.pytest_cache/
+.tox/
+.nox/
+.coverage
+.cache
+.mypy_cache/
+.dmypy.json
+.pyre/
+.pytype/
+.hypothesis/
+.coverage.*
+
+# Notebooks e Jupyter
+.ipynb_checkpoints
+
+# Build / packaging
+build/
+dist/
+*.egg-info/
+*.egg
+*.manifest
+*.spec
+*.whl
+MANIFEST
+
+# Logs
+*.log
+
+# HTML / site
+/site
+
+# Outros
+.pdm.toml
+.ruff_cache/
+.cursorignore
+.cursorindexingignore
+.pypirc
