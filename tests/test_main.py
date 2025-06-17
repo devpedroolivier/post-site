@@ -11,7 +11,7 @@ def test_homepage():
 def test_contato():
     response = client.get("/contato")
     assert response.status_code == 200
-    assert "Fale conosco" in response.text
+    assert "entre em contato" in response.text.lower()
 
 def test_servicos():
     response = client.get("/servicos")
