@@ -19,9 +19,10 @@ def test_servicos():
     assert "Serviços" in response.text
 
 def test_quem_somos():
-    response = client.get("/quem_somos")
+    response = client.get("/quem-somos")
     assert response.status_code == 200
-    assert "Quem somos" in response.text
+    assert "quem somos" in response.text.lower()
+
 
 def test_envio_formulario_contato():
     response = client.post("/enviar-contato", data={
