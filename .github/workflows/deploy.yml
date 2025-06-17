@@ -26,6 +26,8 @@ jobs:
       run: |
         pip install pytest
         pytest tests
+      env:
+        PYTHONPATH: ${{ github.workspace }}
 
     - name: Deploy para Railway
       run: echo "Railway já faz deploy automático no push. Este passo é simbólico."
