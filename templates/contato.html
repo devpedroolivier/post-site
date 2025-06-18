@@ -1,23 +1,49 @@
-<!-- app/templates/contato.html -->
+<!-- templates/contato.html -->
 {% extends "base.html" %}
 
+{% block title %}Contato | POST – Fale com a gente{% endblock %}
+
 {% block content %}
-<div class="container">
-    <h2 class="mb-4">Entre em Contato</h2>
-    <form method="post" action="/enviar-contato">
-        <div class="mb-3">
-            <label for="nome" class="form-label">Nome</label>
-            <input type="text" class="form-control" id="nome" name="nome" required>
+<section class="py-5">
+    <div class="container">
+        <div class="text-center mb-5">
+            <h2 class="fw-bold">Fale com a POST</h2>
+            <p class="lead">Estamos prontos para entender sua necessidade e oferecer a melhor solução.</p>
         </div>
-        <div class="mb-3">
-            <label for="email" class="form-label">E-mail</label>
-            <input type="email" class="form-control" id="email" name="email" required>
+
+        <div class="row g-5">
+            <!-- Formulário -->
+            <div class="col-md-7">
+                <form method="POST" action="/enviar-contato">
+                    <div class="mb-3">
+                        <label for="nome" class="form-label">Nome</label>
+                        <input type="text" class="form-control" id="nome" name="nome" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">E-mail</label>
+                        <input type="email" class="form-control" id="email" name="email" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="mensagem" class="form-label">Mensagem</label>
+                        <textarea class="form-control" id="mensagem" name="mensagem" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100">Enviar Mensagem</button>
+                </form>
+            </div>
+
+            <!-- Informações de Contato -->
+            <div class="col-md-5">
+                <div class="bg-light p-4 rounded shadow-sm">
+                    <h5 class="fw-bold mb-3">Outros canais</h5>
+                    <p><i class="bi bi-envelope-fill text-primary me-2"></i> contato@post.tech</p>
+                    <p>
+                        <i class="bi bi-whatsapp text-success me-2"></i>
+                        <a href="https://wa.me/55SEUNUMERO" target="_blank" class="text-decoration-none">Falar via WhatsApp</a>
+                    </p>
+                    <p><i class="bi bi-geo-alt-fill text-danger me-2"></i> São Paulo, SP – Brasil</p>
+                </div>
+            </div>
         </div>
-        <div class="mb-3">
-            <label for="mensagem" class="form-label">Descreva sua necessidade</label>
-            <textarea class="form-control" id="mensagem" name="mensagem" rows="4" required></textarea>
-        </div>
-        <button type="submit" class="btn btn-primary">Enviar</button>
-    </form>
-</div>
+    </div>
+</section>
 {% endblock %}

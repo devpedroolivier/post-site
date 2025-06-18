@@ -1,17 +1,53 @@
-<!-- app/templates/quem_somos.html -->
+<!-- templates/quem-somos.html -->
 {% extends "base.html" %}
 
+{% block title %}Quem Somos | POST – Consultoria em Automação e Dados{% endblock %}
+
 {% block content %}
-<div class="container">
-    <h2 class="mb-4">Quem Somos</h2>
-    <p>
-        A POST – Process Optimization Solutions Tech é uma consultoria especializada na criação de soluções digitais inteligentes para otimizar processos, automatizar tarefas e transformar dados em decisões estratégicas.
-    </p>
-    <p>
-        Fundada por Pedro Oliveira, profissional com experiência prática na Sabesp em automações, análise de dados e desenvolvimento de sistemas, a POST nasceu com o propósito de levar inovação acessível a empresas públicas e privadas.
-    </p>
-    <p>
-        Atuamos com foco em resultado, entregando sistemas leves, relatórios automáticos e insights valiosos para gestores que desejam eficiência e controle.
-    </p>
-</div>
+<section class="py-5">
+    <div class="container">
+        <div class="row align-items-center g-5">
+            <div class="col-lg-6">
+                <img src="https://source.unsplash.com/600x400/?technology,teamwork" class="img-fluid rounded shadow-sm" alt="Equipe POST">
+            </div>
+            <div class="col-lg-6">
+                <h2 class="fw-bold mb-3">Sobre a POST</h2>
+                <p class="lead">A POST – Process Optimization Solutions Tech nasceu com um propósito claro: simplificar, automatizar e transformar processos por meio da tecnologia.</p>
+                <p>Combinamos expertise técnica, foco em resultados e uma abordagem personalizada para entregar soluções de alto impacto para empresas que desejam evoluir digitalmente.</p>
+                <ul class="list-unstyled mt-4">
+                    <li><i class="bi bi-check-circle-fill text-primary me-2"></i> Especialistas em automações com Python e Selenium</li>
+                    <li><i class="bi bi-check-circle-fill text-primary me-2"></i> Dashboards interativos com Power BI</li>
+                    <li><i class="bi bi-check-circle-fill text-primary me-2"></i> Desenvolvimento ágil de aplicações web</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- MISSÃO, VISÃO, VALORES -->
+<section class="py-5 bg-light">
+    <div class="container text-center">
+        <h3 class="fw-bold mb-4">Nossa Essência</h3>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="p-4 border rounded h-100 shadow-sm">
+                    <h5 class="fw-bold">Missão</h5>
+                    <p>Transformar processos por meio da tecnologia, gerando eficiência e autonomia para nossos clientes.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="p-4 border rounded h-100 shadow-sm">
+                    <h5 class="fw-bold">Visão</h5>
+                    <p>Ser referência nacional em soluções inteligentes de automação, dados e consultoria tecnológica.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="p-4 border rounded h-100 shadow-sm">
+                    <h5 class="fw-bold">Valores</h5>
+                    <p>Inovação, transparência, responsabilidade e foco no resultado.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 {% endblock %}
