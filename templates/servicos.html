@@ -1,0 +1,76 @@
+<!-- templates/servicos.html -->
+{% extends "base.html" %}
+
+{% block title %}Serviços | POST – Soluções em Automação e Dados{% endblock %}
+
+{% block content %}
+<section class="py-5">
+    <div class="container">
+        <div class="text-center mb-5">
+            <h2 class="fw-bold">Nossos Serviços</h2>
+            <p class="lead">Soluções pensadas para aumentar sua produtividade e facilitar a tomada de decisões.</p>
+        </div>
+
+        <div class="row g-4">
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body text-center">
+                        <i class="bi bi-robot display-4 text-primary mb-3"></i>
+                        <h5 class="card-title fw-bold">Automação de Processos</h5>
+                        <p class="card-text">Reduza custos e erros com automações em Python para tarefas repetitivas, integrações e robôs personalizados.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body text-center">
+                        <i class="bi bi-bar-chart display-4 text-primary mb-3"></i>
+                        <h5 class="card-title fw-bold">Dashboards em Power BI</h5>
+                        <p class="card-text">Visualize seus dados de forma clara, com indicadores em tempo real e insights para decisões rápidas e estratégicas.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body text-center">
+                        <i class="bi bi-code-slash display-4 text-primary mb-3"></i>
+                        <h5 class="card-title fw-bold">Sistemas Web Personalizados</h5>
+                        <p class="card-text">Criamos aplicações com FastAPI sob demanda, como painéis de controle, formulários, bots e agendamentos.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body text-center">
+                        <i class="bi bi-person-workspace display-4 text-primary mb-3"></i>
+                        <h5 class="card-title fw-bold">Consultoria Técnica</h5>
+                        <p class="card-text">Diagnóstico, planejamento e execução de soluções digitais para empresas públicas e privadas.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body text-center">
+                        <i class="bi bi-envelope-paper-fill display-4 text-primary mb-3"></i>
+                        <h5 class="card-title fw-bold">Envio Automatizado de Relatórios</h5>
+                        <p class="card-text">Automatize o envio diário ou semanal de relatórios por e-mail ou WhatsApp com gráficos e insights prontos.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA -->
+<section class="py-5 text-center bg-light">
+    <div class="container">
+        <h3 class="fw-bold">Não sabe qual serviço contratar?</h3>
+        <p class="mb-4">Converse com a gente e receba uma proposta personalizada sem compromisso.</p>
+        <a href="/contato" class="btn btn-outline-primary btn-lg">Fale Conosco</a>
+    </div>
+</section>
+{% endblock %}

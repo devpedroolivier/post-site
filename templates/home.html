@@ -1,0 +1,63 @@
+<!-- templates/home.html -->
+{% extends "base.html" %}
+
+{% block title %}Início | POST – Consultoria em Automação e Dados{% endblock %}
+
+{% block content %}
+<!-- HERO SECTION -->
+<section class="text-center py-5">
+    <h1 class="display-5 fw-bold">Transforme dados em decisões com automações inteligentes</h1>
+    <p class="lead mt-3">Consultoria especializada em TI, automação de processos e dashboards sob medida.</p>
+    <a href="/contato" class="btn btn-primary btn-lg mt-4">
+        Solicite um Diagnóstico Gratuito
+    </a>
+</section>
+
+<!-- SERVIÇOS EM DESTAQUE -->
+<section class="py-5 bg-white">
+    <div class="container">
+        <div class="text-center mb-4">
+            <h2 class="fw-bold">Nossas Soluções</h2>
+            <p>Agilidade, clareza e resultados reais para sua operação</p>
+        </div>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body text-center">
+                        <i class="bi bi-gear display-4 text-primary mb-3"></i>
+                        <h5 class="card-title">Automação de Processos</h5>
+                        <p class="card-text">Elimine tarefas manuais com scripts e robôs sob demanda.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body text-center">
+                        <i class="bi bi-bar-chart-line display-4 text-primary mb-3"></i>
+                        <h5 class="card-title">Dashboards Inteligentes</h5>
+                        <p class="card-text">Visualize seus dados em tempo real com Power BI e gráficos personalizados.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body text-center">
+                        <i class="bi bi-cloud-arrow-up display-4 text-primary mb-3"></i>
+                        <h5 class="card-title">Soluções Web</h5>
+                        <p class="card-text">Aplicações modernas com FastAPI para simplificar seu dia a dia.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA FINAL -->
+<section class="py-5 text-center bg-light mt-5">
+    <div class="container">
+        <h3 class="fw-bold">Vamos conversar?</h3>
+        <p class="mb-4">Conte sua necessidade e receba uma proposta personalizada da POST.</p>
+        <a href="/contato" class="btn btn-outline-primary btn-lg">Entrar em Contato</a>
+    </div>
+</section>
+{% endblock %}

@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% block title %}Portfólio | POST{% endblock %}
+
+{% block content %}
+<div class="container py-5">
+  <h2 class="text-center mb-4">Portfólio de Projetos</h2>
+  <div class="row row-cols-1 row-cols-md-3 g-4">
+    {% for projeto in projetos %}
+    <div class="col">
+      <div class="card h-100 shadow-sm">
+        <img src="{{ url_for('static', path='img/' ~ projeto.imagem) }}" class="card-img-top" alt="{{ projeto.titulo }}">
+        <div class="card-body">
+          <h5 class="card-title">{{ projeto.titulo }}</h5>
+          <p class="card-text">{{ projeto.descricao }}</p>
+          <div>
+            {% for tag in projeto.tags %}
+              <span class="badge bg-primary me-1">{{ tag }}</span>
+            {% endfor %}
+          </div>
+        </div>
+        <div class="card-footer text-end">
+          <small class="text-muted">Ano: {{ projeto.ano }}</small>
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</div>
+{% endblock %}
