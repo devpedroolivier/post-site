@@ -60,22 +60,22 @@ async def portfolio(request: Request):
         {
             "titulo": "Automação Reclamações Sabesp",
             "descricao": "Extração de dados do Power BI, análise com Pandas e envio via WhatsApp e Outlook.",
-            "imagem": "projetos/reclamacoes.png",
+            "imagem": "reclamacoes.png",
             "tags": ["Python", "Selenium", "WhatsApp API", "Outlook"],
             "ano": 2025
         },
         {
             "titulo": "Agente IA via WhatsApp",
             "descricao": "Sistema com FastAPI e API oficial Meta para gerar relatórios por comando.",
-            "imagem": "projetos/agente_ia.png",
+            "imagem": "agente_ia.png",
             "tags": ["FastAPI", "Meta API", "Relatórios", "Comandos Inteligentes"],
             "ano": 2025
         },
         {
-            "titulo": "Indicadores WFM",
-            "descricao": "Exportação do WFM, processamento e geração de indicadores com Pandas e HTML.",
-            "imagem": "projetos/indicadores_wfm.png",
-            "tags": ["Pandas", "Excel", "HTML", "Indicadores"],
+            "titulo": "Aplicação Web – Monitoramento Falta d’Água",
+            "descricao": "Visualização interativa de gráficos por setor e polo com dados em tempo real, utilizando FastAPI e Chart.js.",
+            "imagem": "aplicacao_web.png",
+            "tags": ["FastAPI", "Chart.js", "Pandas", "Power BI"],
             "ano": 2025
         }
     ]
