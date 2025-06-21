@@ -1,0 +1,71 @@
+{% extends "base.html" %}
+
+{% block title %}Planos e Pacotes – POST{% endblock %}
+
+{% block content %}
+<section class="py-5 bg-light">
+    <div class="container">
+        <h1 class="display-5 fw-bold text-center mb-3">Planos sob medida para sua operação</h1>
+        <p class="lead text-center mb-5">
+            Escolha o pacote ideal e transforme processos em resultados com automação, dados e tecnologia.
+        </p>
+
+        <div class="row g-4">
+            <!-- Plano Start -->
+            <div class="col-md-4">
+                <div class="card shadow-sm h-100">
+                    <div class="card-body">
+                        <h5 class="card-title text-primary">Plano Start</h5>
+                        <h6 class="card-subtitle mb-3 text-muted">R$ 600/mês</h6>
+                        <ul class="list-unstyled mb-4">
+                            <li>✔ 1 automação simples</li>
+                            <li>✔ Relatório mensal</li>
+                            <li>✔ Suporte por e-mail</li>
+                            <li>✔ Reunião de alinhamento</li>
+                        </ul>
+                        <a href="/contato" class="btn btn-outline-primary w-100">Começar agora</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Plano Pro -->
+            <div class="col-md-4">
+                <div class="card shadow h-100 border-primary">
+                    <div class="card-body">
+                        <h5 class="card-title text-primary">Plano Pro</h5>
+                        <h6 class="card-subtitle mb-3 text-muted">R$ 1.500/mês</h6>
+                        <ul class="list-unstyled mb-4">
+                            <li>✔ Até 3 automações médias</li>
+                            <li>✔ Dashboard interativo</li>
+                            <li>✔ Suporte por WhatsApp</li>
+                            <li>✔ Reunião mensal</li>
+                        </ul>
+                        <a href="/contato" class="btn btn-primary w-100">Solicitar proposta</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Plano Enterprise -->
+            <div class="col-md-4">
+                <div class="card shadow-sm h-100">
+                    <div class="card-body">
+                        <h5 class="card-title text-primary">Plano Enterprise</h5>
+                        <h6 class="card-subtitle mb-3 text-muted">A partir de R$ 4.900/mês</h6>
+                        <ul class="list-unstyled mb-4">
+                            <li>✔ Automações ilimitadas</li>
+                            <li>✔ Desenvolvimento web</li>
+                            <li>✔ Integração com APIs</li>
+                            <li>✔ SLA e equipe dedicada</li>
+                        </ul>
+                        <a href="/contato" class="btn btn-outline-primary w-100">Agendar reunião</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-center mt-5">
+            <a href="/demo" class="btn btn-secondary btn-lg">Agendar Demonstração</a>
+        </div>
+    </div>
+</section>
+{% endblock %}

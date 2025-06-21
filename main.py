@@ -81,10 +81,17 @@ async def portfolio(request: Request):
     ]
     return templates.TemplateResponse("portfolio.html", {"request": request, "projetos": projetos})
 
-
 @app.get("/quem-somos", response_class=HTMLResponse)
 async def quem_somos(request: Request):
     return templates.TemplateResponse(request, "quem-somos.html", {})
+
+@app.get("/planos", response_class=HTMLResponse)
+async def planos(request: Request):
+    return templates.TemplateResponse("planos.html", {"request": request})
+
+@app.get("/demo", response_class=HTMLResponse)
+async def demo(request: Request):
+    return templates.TemplateResponse("demo.html", {"request": request})
 
 if __name__ == "__main__":
     import uvicorn
