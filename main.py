@@ -54,6 +54,34 @@ async def enviar_contato(
 async def servicos(request: Request):
     return templates.TemplateResponse(request, "servicos.html", {})
 
+@app.get("/portfolio", response_class=HTMLResponse)
+async def portfolio(request: Request):
+    projetos = [
+        {
+            "titulo": "Automação Reclamações Sabesp",
+            "descricao": "Extração de dados do Power BI, análise com Pandas e envio via WhatsApp e Outlook.",
+            "imagem": "projetos/reclamacoes.png",
+            "tags": ["Python", "Selenium", "WhatsApp API", "Outlook"],
+            "ano": 2025
+        },
+        {
+            "titulo": "Agente IA via WhatsApp",
+            "descricao": "Sistema com FastAPI e API oficial Meta para gerar relatórios por comando.",
+            "imagem": "projetos/agente_ia.png",
+            "tags": ["FastAPI", "Meta API", "Relatórios", "Comandos Inteligentes"],
+            "ano": 2025
+        },
+        {
+            "titulo": "Indicadores WFM",
+            "descricao": "Exportação do WFM, processamento e geração de indicadores com Pandas e HTML.",
+            "imagem": "projetos/indicadores_wfm.png",
+            "tags": ["Pandas", "Excel", "HTML", "Indicadores"],
+            "ano": 2025
+        }
+    ]
+    return templates.TemplateResponse("portfolio.html", {"request": request, "projetos": projetos})
+
+
 @app.get("/quem-somos", response_class=HTMLResponse)
 async def quem_somos(request: Request):
     return templates.TemplateResponse(request, "quem-somos.html", {})
