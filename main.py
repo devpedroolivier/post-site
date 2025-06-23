@@ -58,7 +58,7 @@ async def servicos(request: Request):
 async def portfolio(request: Request):
     projetos = [
         {
-            "titulo": "Automação Reclamações Sabesp",
+            "titulo": "Automação Reclamações",
             "descricao": "Extração de dados do Power BI, análise com Pandas e envio via WhatsApp e Outlook.",
             "imagem": "reclamacoes.png",
             "tags": ["Python", "Selenium", "WhatsApp API", "Outlook"],
